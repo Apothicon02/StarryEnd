@@ -1,0 +1,11 @@
+{
+  "compatibilityLevel": "JAVA_17",
+  "package": "com.Apothic0n.KazsEnd.mixin",
+  "refmap": "mixins.kazsend.refmap.json",
+  "required": true,
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+  ]
+}

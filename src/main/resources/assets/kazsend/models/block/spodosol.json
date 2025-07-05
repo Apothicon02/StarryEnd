@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "kazsend:block/spodosol_top",
+    "side": "kazsend:block/spodosol_side",
+    "bottom": "minecraft:block/end_stone"
+  }
+}

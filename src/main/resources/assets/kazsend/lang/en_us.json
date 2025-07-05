@@ -1,0 +1,26 @@
+{
+  "item.kazsend.endergranate": "Endergranate",
+
+  "block.kazsend.spodosol": "Spodosol",
+  "block.kazsend.ender_turf": "Ender Turf",
+
+  "block.kazsend.ender_roots": "Ender Roots",
+  "block.kazsend.ender_clover": "Ender Clover",
+  "block.kazsend.endergreen": "Endergreen",
+  "block.kazsend.creeping_endrils": "Creeping Endrils",
+  "block.kazsend.creeping_endrils_plant": "Creeping Endrils Plant",
+  "block.kazsend.sprouting_endervines": "Sprouting Endervines",
+  "block.kazsend.sprouting_endervines_plant": "Sprouting Endervines Plant",
+
+  "block.kazsend.ebony_leaves": "Ebony Leaves",
+  "block.kazsend.ebony_log": "Ebony Log",
+  "block.kazsend.ebony_wood": "Ebony Wood",
+  "block.kazsend.stripped_ebony": "Stripped Ebony",
+  "block.kazsend.stripped_ebony_wood": "Stripped Ebony Wood",
+
+  "block.kazsend.enderviolet_leaves": "Enderviolet Leaves",
+  "block.kazsend.enderviolet_log": "Enderviolet Log",
+  "block.kazsend.enderviolet_wood": "Enderviolet Wood",
+  "block.kazsend.stripped_enderviolet": "Stripped Enderviolet",
+  "block.kazsend.stripped_enderviolet_wood": "Stripped Enderviolet Wood"
+}
