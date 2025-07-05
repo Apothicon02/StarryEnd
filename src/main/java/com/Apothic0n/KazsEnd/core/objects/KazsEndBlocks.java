@@ -5,6 +5,8 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.grower.OakTreeGrower;
+import net.minecraft.world.level.block.grower.SpruceTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
@@ -35,6 +37,8 @@ public final class KazsEndBlocks {
     public static final RegistryObject<Block> SPROUTING_ENDERVINES_PLANT = BLOCKS.register("sprouting_endervines_plant", () ->
             new SproutingEndervinesPlantBlock(BlockBehaviour.Properties.copy(Blocks.TWISTING_VINES_PLANT).sound(SoundType.TWISTING_VINES)));
 
+    public static final RegistryObject<Block> EBONY_SAPLING = BLOCKS.register("ebony_sapling", () ->
+            new SaplingBlock(new SpruceTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> EBONY_LEAVES = BLOCKS.register("ebony_leaves", () ->
             new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.GRASS)));
     public static final RegistryObject<Block> EBONY_LOG = BLOCKS.register("ebony_log", () ->
@@ -53,7 +57,15 @@ public final class KazsEndBlocks {
             new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD, (state) -> {
                 return MaterialColor.COLOR_BLACK;
             }).strength(2.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> EBONY_PLANKS = BLOCKS.register("ebony_planks", () ->
+            new Block(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> EBONY_SLAB = BLOCKS.register("ebony_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> EBONY_STAIRS = BLOCKS.register("ebony_stairs", () ->
+            new StairBlock(EBONY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
 
+    public static final RegistryObject<Block> ENDERVIOLET_SAPLING = BLOCKS.register("enderviolet_sapling", () ->
+            new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> ENDERVIOLET_LEAVES = BLOCKS.register("enderviolet_leaves", () ->
             new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.GRASS)));
     public static final RegistryObject<Block> ENDERVIOLET_LOG = BLOCKS.register("enderviolet_log", () ->
@@ -72,6 +84,12 @@ public final class KazsEndBlocks {
             new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD, (state) -> {
                 return MaterialColor.COLOR_PURPLE;
             }).strength(2.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> ENDERVIOLET_PLANKS = BLOCKS.register("enderviolet_planks", () ->
+            new Block(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> ENDERVIOLET_SLAB = BLOCKS.register("enderviolet_slab", () ->
+            new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> ENDERVIOLET_STAIRS = BLOCKS.register("enderviolet_stairs", () ->
+            new StairBlock(EBONY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
 
 
     public static void fixBlockRenderLayers() {
@@ -82,7 +100,9 @@ public final class KazsEndBlocks {
         ItemBlockRenderTypes.setRenderLayer(CREEPING_ENDRILS_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(SPROUTING_ENDERVINES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(SPROUTING_ENDERVINES_PLANT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(EBONY_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(EBONY_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ENDERVIOLET_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ENDERVIOLET_LEAVES.get(), RenderType.cutout());
     }
 }

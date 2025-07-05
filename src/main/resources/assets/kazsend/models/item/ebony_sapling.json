@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kazsend:block/ender_roots"
+    "layer0": "kazsend:block/ebony_sapling"
   }
 }

@@ -1,3 +1,6 @@
 {
-  "parent": "kazsend:block/ender_clover"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kazsend:block/ender_clover"
+  }
 }

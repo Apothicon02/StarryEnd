@@ -32,6 +32,8 @@ public final class KazsEndItems extends Items {
     public static final RegistryObject<Item> SPROUTING_ENDERVINES = ITEMS.register("sprouting_endervines", () ->
             new BlockItem(KazsEndBlocks.SPROUTING_ENDERVINES.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 
+    public static final RegistryObject<Item> EBONY_SAPLING = ITEMS.register("ebony_sapling", () ->
+            new BlockItem(KazsEndBlocks.EBONY_SAPLING.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> EBONY_LEAVES = ITEMS.register("ebony_leaves", () ->
             new BlockItem(KazsEndBlocks.EBONY_LEAVES.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> EBONY_LOG = ITEMS.register("ebony_log", () ->
@@ -42,7 +44,15 @@ public final class KazsEndItems extends Items {
             new BlockItem(KazsEndBlocks.STRIPPED_EBONY.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
     public static final RegistryObject<Item> STRIPPED_EBONY_WOOD = ITEMS.register("stripped_ebony_wood", () ->
             new BlockItem(KazsEndBlocks.STRIPPED_EBONY_WOOD.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> EBONY_PLANKS = ITEMS.register("ebony_planks", () ->
+            new BlockItem(KazsEndBlocks.EBONY_PLANKS.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> EBONY_SLAB = ITEMS.register("ebony_slab", () ->
+            new BlockItem(KazsEndBlocks.EBONY_SLAB.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> EBONY_STAIRS = ITEMS.register("ebony_stairs", () ->
+            new BlockItem(KazsEndBlocks.EBONY_STAIRS.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
+    public static final RegistryObject<Item> ENDERVIOLET_SAPLING = ITEMS.register("enderviolet_sapling", () ->
+            new BlockItem(KazsEndBlocks.ENDERVIOLET_SAPLING.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDERVIOLET_LEAVES = ITEMS.register("enderviolet_leaves", () ->
             new BlockItem(KazsEndBlocks.ENDERVIOLET_LEAVES.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDERVIOLET_LOG = ITEMS.register("enderviolet_log", () ->
@@ -53,4 +63,10 @@ public final class KazsEndItems extends Items {
             new BlockItem(KazsEndBlocks.STRIPPED_ENDERVIOLET.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
     public static final RegistryObject<Item> STRIPPED_ENDERVIOLET_WOOD = ITEMS.register("stripped_enderviolet_wood", () ->
             new BlockItem(KazsEndBlocks.STRIPPED_ENDERVIOLET_WOOD.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> ENDERVIOLET_PLANKS = ITEMS.register("enderviolet_planks", () ->
+            new BlockItem(KazsEndBlocks.ENDERVIOLET_PLANKS.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> ENDERVIOLET_SLAB = ITEMS.register("enderviolet_slab", () ->
+            new BlockItem(KazsEndBlocks.ENDERVIOLET_SLAB.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> ENDERVIOLET_STAIRS = ITEMS.register("enderviolet_stairs", () ->
+            new BlockItem(KazsEndBlocks.ENDERVIOLET_STAIRS.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 }

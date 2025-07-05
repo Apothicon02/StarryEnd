@@ -12,15 +12,23 @@
   "block.kazsend.sprouting_endervines": "Sprouting Endervines",
   "block.kazsend.sprouting_endervines_plant": "Sprouting Endervines Plant",
 
+  "block.kazsend.ebony_sapling": "Ebony Sapling",
   "block.kazsend.ebony_leaves": "Ebony Leaves",
   "block.kazsend.ebony_log": "Ebony Log",
   "block.kazsend.ebony_wood": "Ebony Wood",
   "block.kazsend.stripped_ebony": "Stripped Ebony",
   "block.kazsend.stripped_ebony_wood": "Stripped Ebony Wood",
+  "block.kazsend.ebony_planks": "Ebony Planks",
+  "block.kazsend.ebony_slab": "Ebony Slab",
+  "block.kazsend.ebony_stairs": "Ebony Stairs",
 
+  "block.kazsend.enderviolet_sapling": "Enderviolet Sapling",
   "block.kazsend.enderviolet_leaves": "Enderviolet Leaves",
   "block.kazsend.enderviolet_log": "Enderviolet Log",
   "block.kazsend.enderviolet_wood": "Enderviolet Wood",
   "block.kazsend.stripped_enderviolet": "Stripped Enderviolet",
-  "block.kazsend.stripped_enderviolet_wood": "Stripped Enderviolet Wood"
+  "block.kazsend.stripped_enderviolet_wood": "Stripped Enderviolet Wood",
+  "block.kazsend.enderviolet_planks": "Enderviolet Planks",
+  "block.kazsend.enderviolet_slab": "Enderviolet Slab",
+  "block.kazsend.enderviolet_stairs": "Enderviolet Stairs"
 }
