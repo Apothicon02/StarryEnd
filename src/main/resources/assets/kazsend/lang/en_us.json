@@ -21,6 +21,11 @@
   "block.kazsend.ebony_planks": "Ebony Planks",
   "block.kazsend.ebony_slab": "Ebony Slab",
   "block.kazsend.ebony_stairs": "Ebony Stairs",
+  "block.kazsend.ebony_fence": "Ebony Fence",
+  "block.kazsend.ebony_fence_gate": "Ebony Fence Gate",
+  "block.kazsend.ebony_pressure_plate": "Ebony Pressure Plate",
+  "block.kazsend.ebony_button": "Ebony Button",
+  "block.kazsend.ebony_sign": "Ebony Sign",
 
   "block.kazsend.enderviolet_sapling": "Enderviolet Sapling",
   "block.kazsend.enderviolet_leaves": "Enderviolet Leaves",
@@ -30,5 +35,10 @@
   "block.kazsend.stripped_enderviolet_wood": "Stripped Enderviolet Wood",
   "block.kazsend.enderviolet_planks": "Enderviolet Planks",
   "block.kazsend.enderviolet_slab": "Enderviolet Slab",
-  "block.kazsend.enderviolet_stairs": "Enderviolet Stairs"
+  "block.kazsend.enderviolet_stairs": "Enderviolet Stairs",
+  "block.kazsend.enderviolet_fence": "Enderviolet Fence",
+  "block.kazsend.enderviolet_fence_gate": "Enderviolet Fence Gate",
+  "block.kazsend.enderviolet_pressure_plate": "Enderviolet Pressure Plate",
+  "block.kazsend.enderviolet_button": "Enderviolet Button",
+  "block.kazsend.enderviolet_sign": "Enderviolet Sign"
 }

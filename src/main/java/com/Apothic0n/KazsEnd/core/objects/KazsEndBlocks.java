@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.OakTreeGrower;
 import net.minecraft.world.level.block.grower.SpruceTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
@@ -58,11 +59,23 @@ public final class KazsEndBlocks {
                 return MaterialColor.COLOR_BLACK;
             }).strength(2.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> EBONY_PLANKS = BLOCKS.register("ebony_planks", () ->
-            new Block(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+            new Block(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_BLACK).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> EBONY_SLAB = BLOCKS.register("ebony_slab", () ->
-            new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+            new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_BLACK).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> EBONY_STAIRS = BLOCKS.register("ebony_stairs", () ->
-            new StairBlock(EBONY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+            new StairBlock(EBONY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_BLACK).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> EBONY_FENCE = BLOCKS.register("ebony_fence", () ->
+            new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD, EBONY_PLANKS.get().defaultMaterialColor()).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> EBONY_FENCE_GATE = BLOCKS.register("ebony_fence_gate", () ->
+            new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD, EBONY_PLANKS.get().defaultMaterialColor()).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> EBONY_PRESSURE_PLATE = BLOCKS.register("ebony_pressure_plate", () ->
+            new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD, EBONY_PLANKS.get().defaultMaterialColor()).noCollission().strength(0.5F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> EBONY_BUTTON = BLOCKS.register("ebony_button", () ->
+            new WoodButtonBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(0.5F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> EBONY_SIGN = BLOCKS.register("ebony_sign", () ->
+            new StandingSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0F).sound(SoundType.WOOD), WoodType.DARK_OAK));
+    public static final RegistryObject<Block> EBONY_WALL_SIGN = BLOCKS.register("ebony_wall_sign", () ->
+            new WallSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0F).sound(SoundType.WOOD).dropsLike(EBONY_SIGN.get()), WoodType.DARK_OAK));
 
     public static final RegistryObject<Block> ENDERVIOLET_SAPLING = BLOCKS.register("enderviolet_sapling", () ->
             new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
@@ -85,12 +98,23 @@ public final class KazsEndBlocks {
                 return MaterialColor.COLOR_PURPLE;
             }).strength(2.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> ENDERVIOLET_PLANKS = BLOCKS.register("enderviolet_planks", () ->
-            new Block(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+            new Block(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_PURPLE).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> ENDERVIOLET_SLAB = BLOCKS.register("enderviolet_slab", () ->
-            new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+            new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_PURPLE).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> ENDERVIOLET_STAIRS = BLOCKS.register("enderviolet_stairs", () ->
-            new StairBlock(EBONY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
-
+            new StairBlock(ENDERVIOLET_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_PURPLE).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> ENDERVIOLET_FENCE = BLOCKS.register("enderviolet_fence", () ->
+            new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD, ENDERVIOLET_PLANKS.get().defaultMaterialColor()).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> ENDERVIOLET_FENCE_GATE = BLOCKS.register("enderviolet_fence_gate", () ->
+            new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD, ENDERVIOLET_PLANKS.get().defaultMaterialColor()).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> ENDERVIOLET_PRESSURE_PLATE = BLOCKS.register("enderviolet_pressure_plate", () ->
+            new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD, ENDERVIOLET_PLANKS.get().defaultMaterialColor()).noCollission().strength(0.5F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> ENDERVIOLET_BUTTON = BLOCKS.register("enderviolet_button", () ->
+            new WoodButtonBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(0.5F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> ENDERVIOLET_SIGN = BLOCKS.register("enderviolet_sign", () ->
+            new StandingSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0F).sound(SoundType.WOOD), WoodType.BIRCH));
+    public static final RegistryObject<Block> ENDERVIOLET_WALL_SIGN = BLOCKS.register("enderviolet_wall_sign", () ->
+            new WallSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0F).sound(SoundType.WOOD).dropsLike(ENDERVIOLET_SIGN.get()), WoodType.BIRCH));
 
     public static void fixBlockRenderLayers() {
         ItemBlockRenderTypes.setRenderLayer(ENDER_ROOTS.get(), RenderType.cutout());

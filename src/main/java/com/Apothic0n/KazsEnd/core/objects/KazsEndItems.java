@@ -2,10 +2,8 @@ package com.Apothic0n.KazsEnd.core.objects;
 
 import com.Apothic0n.KazsEnd.KazsEnd;
 import net.minecraft.world.food.Foods;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -50,6 +48,16 @@ public final class KazsEndItems extends Items {
             new BlockItem(KazsEndBlocks.EBONY_SLAB.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
     public static final RegistryObject<Item> EBONY_STAIRS = ITEMS.register("ebony_stairs", () ->
             new BlockItem(KazsEndBlocks.EBONY_STAIRS.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> EBONY_FENCE = ITEMS.register("ebony_fence", () ->
+            new BlockItem(KazsEndBlocks.EBONY_FENCE.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> EBONY_FENCE_GATE = ITEMS.register("ebony_fence_gate", () ->
+            new BlockItem(KazsEndBlocks.EBONY_FENCE_GATE.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> EBONY_PRESSURE_PLATE = ITEMS.register("ebony_pressure_plate", () ->
+            new BlockItem(KazsEndBlocks.EBONY_PRESSURE_PLATE.get(), new Item.Properties().tab(CreativeModeTab.TAB_REDSTONE)));
+    public static final RegistryObject<Item> EBONY_BUTTON = ITEMS.register("ebony_button", () ->
+            new BlockItem(KazsEndBlocks.EBONY_BUTTON.get(), new Item.Properties().tab(CreativeModeTab.TAB_REDSTONE)));
+    public static final RegistryObject<Item> EBONY_SIGN = ITEMS.register("ebony_sign", () ->
+            new SignItem((new Item.Properties()).stacksTo(16).tab(CreativeModeTab.TAB_DECORATIONS), KazsEndBlocks.EBONY_SIGN.get(), KazsEndBlocks.EBONY_WALL_SIGN.get()));
 
     public static final RegistryObject<Item> ENDERVIOLET_SAPLING = ITEMS.register("enderviolet_sapling", () ->
             new BlockItem(KazsEndBlocks.ENDERVIOLET_SAPLING.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
@@ -69,4 +77,14 @@ public final class KazsEndItems extends Items {
             new BlockItem(KazsEndBlocks.ENDERVIOLET_SLAB.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
     public static final RegistryObject<Item> ENDERVIOLET_STAIRS = ITEMS.register("enderviolet_stairs", () ->
             new BlockItem(KazsEndBlocks.ENDERVIOLET_STAIRS.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> ENDERVIOLET_FENCE = ITEMS.register("enderviolet_fence", () ->
+            new BlockItem(KazsEndBlocks.ENDERVIOLET_FENCE.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> ENDERVIOLET_FENCE_GATE = ITEMS.register("enderviolet_fence_gate", () ->
+            new BlockItem(KazsEndBlocks.ENDERVIOLET_FENCE_GATE.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistryObject<Item> ENDERVIOLET_PRESSURE_PLATE = ITEMS.register("enderviolet_pressure_plate", () ->
+            new BlockItem(KazsEndBlocks.ENDERVIOLET_PRESSURE_PLATE.get(), new Item.Properties().tab(CreativeModeTab.TAB_REDSTONE)));
+    public static final RegistryObject<Item> ENDERVIOLET_BUTTON = ITEMS.register("enderviolet_button", () ->
+            new BlockItem(KazsEndBlocks.ENDERVIOLET_BUTTON.get(), new Item.Properties().tab(CreativeModeTab.TAB_REDSTONE)));
+    public static final RegistryObject<Item> ENDERVIOLET_SIGN = ITEMS.register("enderviolet_sign", () ->
+            new SignItem((new Item.Properties()).stacksTo(16).tab(CreativeModeTab.TAB_DECORATIONS), KazsEndBlocks.ENDERVIOLET_SIGN.get(), KazsEndBlocks.ENDERVIOLET_WALL_SIGN.get()));
 }
