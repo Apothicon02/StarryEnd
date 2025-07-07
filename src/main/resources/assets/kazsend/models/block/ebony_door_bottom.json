@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "top": "kazsend:block/ebony_door_top",
+    "bottom": "kazsend:block/ebony_door_bottom"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "kazsend:block/dust_layer",
+  "textures": {
+    "flowerbed": "kazsend:block/ender_star_dust"
+  }
+}

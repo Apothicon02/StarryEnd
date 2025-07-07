@@ -3,12 +3,10 @@ package com.Apothic0n.KazsEnd.core.objects;
 import com.Apothic0n.KazsEnd.KazsEnd;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.OakTreeGrower;
 import net.minecraft.world.level.block.grower.SpruceTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +15,31 @@ import net.minecraftforge.registries.RegistryObject;
 
 public final class KazsEndBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, KazsEnd.MODID);
+
+    public static final RegistryObject<Block> ENDER_NEBULA = BLOCKS.register("ender_nebula", () ->
+            new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_PURPLE).strength(3.0F, 6.0F).sound(SoundType.AMETHYST).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> ENDER_NEBULA_DUST = BLOCKS.register("ender_nebula_dust", () ->
+            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_PURPLE).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> ENDER_NEBULA_DUST_BLOCK = BLOCKS.register("ender_nebula_dust_block", () ->
+            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_PURPLE).strength(3.0F, 6.0F).sound(SoundType.SAND).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> ENDER_PROTOSTAR = BLOCKS.register("ender_protostar", () ->
+            new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_ORANGE).strength(3.0F, 6.0F).sound(SoundType.AMETHYST).lightLevel((state) -> 12)));
+    public static final RegistryObject<Block> ENDER_PROTOSTAR_DUST = BLOCKS.register("ender_protostar_dust", () ->
+            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_ORANGE).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 12)));
+    public static final RegistryObject<Block> ENDER_PROTOSTAR_DUST_BLOCK = BLOCKS.register("ender_protostar_dust_block", () ->
+            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_ORANGE).strength(3.0F, 6.0F).sound(SoundType.SAND).lightLevel((state) -> 12)));
+    public static final RegistryObject<Block> ENDER_STAR = BLOCKS.register("ender_star", () ->
+            new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_YELLOW).strength(3.0F, 6.0F).sound(SoundType.AMETHYST).lightLevel((state) -> 9)));
+    public static final RegistryObject<Block> ENDER_STAR_DUST = BLOCKS.register("ender_star_dust", () ->
+            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_YELLOW).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 9)));
+    public static final RegistryObject<Block> ENDER_STAR_DUST_BLOCK = BLOCKS.register("ender_star_dust_block", () ->
+            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_YELLOW).strength(3.0F, 6.0F).sound(SoundType.SAND).lightLevel((state) -> 9)));
+    public static final RegistryObject<Block> ENDER_NEUTRON = BLOCKS.register("ender_neutron", () ->
+            new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_CYAN).strength(3.0F, 6.0F).sound(SoundType.AMETHYST).lightLevel((state) -> 6)));
+    public static final RegistryObject<Block> ENDER_NEUTRON_DUST = BLOCKS.register("ender_neutron_dust", () ->
+            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_CYAN).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 6)));
+    public static final RegistryObject<Block> ENDER_NEUTRON_DUST_BLOCK = BLOCKS.register("ender_neutron_dust_block", () ->
+            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_CYAN).strength(3.0F, 6.0F).sound(SoundType.SAND).lightLevel((state) -> 6)));
 
     public static final RegistryObject<Block> SPODOSOL = BLOCKS.register("spodosol", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.PODZOL).sound(SoundType.ROOTED_DIRT)));
@@ -72,10 +95,10 @@ public final class KazsEndBlocks {
             new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD, EBONY_PLANKS.get().defaultMaterialColor()).noCollission().strength(0.5F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> EBONY_BUTTON = BLOCKS.register("ebony_button", () ->
             new WoodButtonBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(0.5F).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> EBONY_SIGN = BLOCKS.register("ebony_sign", () ->
-            new StandingSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0F).sound(SoundType.WOOD), WoodType.DARK_OAK));
-    public static final RegistryObject<Block> EBONY_WALL_SIGN = BLOCKS.register("ebony_wall_sign", () ->
-            new WallSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0F).sound(SoundType.WOOD).dropsLike(EBONY_SIGN.get()), WoodType.DARK_OAK));
+    public static final RegistryObject<Block> EBONY_DOOR = BLOCKS.register("ebony_door", () ->
+            new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD, EBONY_PLANKS.get().defaultMaterialColor()).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> EBONY_TRAPDOOR = BLOCKS.register("ebony_trapdoor", () ->
+            new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_BLACK).strength(3.0F).sound(SoundType.WOOD).noOcclusion().isValidSpawn(Blocks::never)));
 
     public static final RegistryObject<Block> ENDERVIOLET_SAPLING = BLOCKS.register("enderviolet_sapling", () ->
             new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
@@ -111,10 +134,10 @@ public final class KazsEndBlocks {
             new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD, ENDERVIOLET_PLANKS.get().defaultMaterialColor()).noCollission().strength(0.5F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> ENDERVIOLET_BUTTON = BLOCKS.register("enderviolet_button", () ->
             new WoodButtonBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().strength(0.5F).sound(SoundType.WOOD)));
-    public static final RegistryObject<Block> ENDERVIOLET_SIGN = BLOCKS.register("enderviolet_sign", () ->
-            new StandingSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0F).sound(SoundType.WOOD), WoodType.BIRCH));
-    public static final RegistryObject<Block> ENDERVIOLET_WALL_SIGN = BLOCKS.register("enderviolet_wall_sign", () ->
-            new WallSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0F).sound(SoundType.WOOD).dropsLike(ENDERVIOLET_SIGN.get()), WoodType.BIRCH));
+    public static final RegistryObject<Block> ENDERVIOLET_DOOR = BLOCKS.register("enderviolet_door", () ->
+            new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD, ENDERVIOLET_PLANKS.get().defaultMaterialColor()).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
+    public static final RegistryObject<Block> ENDERVIOLET_TRAPDOOR = BLOCKS.register("enderviolet_trapdoor", () ->
+            new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_PURPLE).strength(3.0F).sound(SoundType.WOOD).noOcclusion().isValidSpawn(Blocks::never)));
 
     public static void fixBlockRenderLayers() {
         ItemBlockRenderTypes.setRenderLayer(ENDER_ROOTS.get(), RenderType.cutout());
@@ -126,7 +149,15 @@ public final class KazsEndBlocks {
         ItemBlockRenderTypes.setRenderLayer(SPROUTING_ENDERVINES_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(EBONY_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(EBONY_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(EBONY_DOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(EBONY_TRAPDOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ENDERVIOLET_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ENDERVIOLET_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ENDERVIOLET_DOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ENDERVIOLET_TRAPDOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ENDER_NEBULA_DUST.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ENDER_PROTOSTAR_DUST.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ENDER_STAR_DUST.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ENDER_NEUTRON_DUST.get(), RenderType.cutout());
     }
 }
