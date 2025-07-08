@@ -5,7 +5,6 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.OakTreeGrower;
-import net.minecraft.world.level.block.grower.SpruceTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
@@ -42,16 +41,16 @@ public final class KazsEndBlocks {
             new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_CYAN).strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.SAND).lightLevel((state) -> 6)));
 
     public static final RegistryObject<Block> SPODOSOL = BLOCKS.register("spodosol", () ->
-            new Block(BlockBehaviour.Properties.copy(Blocks.PODZOL).sound(SoundType.ROOTED_DIRT)));
+            new SpodosolBlock(BlockBehaviour.Properties.copy(Blocks.PODZOL).sound(SoundType.ROOTED_DIRT).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ENDER_TURF = BLOCKS.register("ender_turf", () ->
-            new Block(BlockBehaviour.Properties.copy(Blocks.PODZOL).sound(SoundType.ROOTED_DIRT)));
+            new EnderTurfBlock(BlockBehaviour.Properties.copy(Blocks.PODZOL).sound(SoundType.ROOTED_DIRT).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> ENDER_ROOTS = BLOCKS.register("ender_roots", () ->
-            new TallGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).sound(SoundType.ROOTS)));
+            new EnderFoliageBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).sound(SoundType.ROOTS)));
     public static final RegistryObject<Block> ENDER_CLOVER = BLOCKS.register("ender_clover", () ->
             new CloverBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).sound(SoundType.ROOTS)));
     public static final RegistryObject<Block> ENDERGREEN = BLOCKS.register("endergreen", () ->
-            new TallGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).sound(SoundType.ROOTS)));
+            new EnderFoliageBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).sound(SoundType.ROOTS)));
     public static final RegistryObject<Block> CREEPING_ENDRILS = BLOCKS.register("creeping_endrils", () ->
             new CreepingEndrilsBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES).sound(SoundType.WEEPING_VINES)));
     public static final RegistryObject<Block> CREEPING_ENDRILS_PLANT = BLOCKS.register("creeping_endrils_plant", () ->
@@ -62,7 +61,7 @@ public final class KazsEndBlocks {
             new SproutingEndervinesPlantBlock(BlockBehaviour.Properties.copy(Blocks.TWISTING_VINES_PLANT).sound(SoundType.TWISTING_VINES)));
 
     public static final RegistryObject<Block> EBONY_SAPLING = BLOCKS.register("ebony_sapling", () ->
-            new SaplingBlock(new SpruceTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
+            new SaplingBlock(new EbonyTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> EBONY_LEAVES = BLOCKS.register("ebony_leaves", () ->
             new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.GRASS)));
     public static final RegistryObject<Block> EBONY_LOG = BLOCKS.register("ebony_log", () ->
@@ -101,7 +100,7 @@ public final class KazsEndBlocks {
             new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_BLACK).strength(3.0F).sound(SoundType.WOOD).noOcclusion().isValidSpawn(Blocks::never)));
 
     public static final RegistryObject<Block> ENDERVIOLET_SAPLING = BLOCKS.register("enderviolet_sapling", () ->
-            new SaplingBlock(new OakTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
+            new SaplingBlock(new EndervioletTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
     public static final RegistryObject<Block> ENDERVIOLET_LEAVES = BLOCKS.register("enderviolet_leaves", () ->
             new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.GRASS)));
     public static final RegistryObject<Block> ENDERVIOLET_LOG = BLOCKS.register("enderviolet_log", () ->
