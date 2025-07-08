@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "kazsend:ebony_log",
+    "kazsend:ebony_wood",
+    "kazsend:stripped_ebony",
+    "kazsend:stripped_ebony_wood",
+    "kazsend:enderviolet_log",
+    "kazsend:enderviolet_wood",
+    "kazsend:stripped_enderviolet",
+    "kazsend:stripped_enderviolet_wood"
+  ]
+}

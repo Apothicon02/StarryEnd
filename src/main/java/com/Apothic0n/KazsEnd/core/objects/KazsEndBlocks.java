@@ -17,29 +17,29 @@ public final class KazsEndBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, KazsEnd.MODID);
 
     public static final RegistryObject<Block> ENDER_NEBULA = BLOCKS.register("ender_nebula", () ->
-            new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_PURPLE).strength(3.0F, 6.0F).sound(SoundType.AMETHYST).lightLevel((state) -> 15)));
+            new OxidizingBlock(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_PURPLE).strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.AMETHYST).lightLevel((state) -> 15)));
     public static final RegistryObject<Block> ENDER_NEBULA_DUST = BLOCKS.register("ender_nebula_dust", () ->
-            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_PURPLE).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 15)));
+            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_PURPLE).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 15)));
     public static final RegistryObject<Block> ENDER_NEBULA_DUST_BLOCK = BLOCKS.register("ender_nebula_dust_block", () ->
-            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_PURPLE).strength(3.0F, 6.0F).sound(SoundType.SAND).lightLevel((state) -> 15)));
+            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_PURPLE).strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.SAND).lightLevel((state) -> 15)));
     public static final RegistryObject<Block> ENDER_PROTOSTAR = BLOCKS.register("ender_protostar", () ->
-            new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_ORANGE).strength(3.0F, 6.0F).sound(SoundType.AMETHYST).lightLevel((state) -> 12)));
+            new OxidizingBlock(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_ORANGE).strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.AMETHYST).lightLevel((state) -> 12)));
     public static final RegistryObject<Block> ENDER_PROTOSTAR_DUST = BLOCKS.register("ender_protostar_dust", () ->
-            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_ORANGE).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 12)));
+            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_ORANGE).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 12)));
     public static final RegistryObject<Block> ENDER_PROTOSTAR_DUST_BLOCK = BLOCKS.register("ender_protostar_dust_block", () ->
-            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_ORANGE).strength(3.0F, 6.0F).sound(SoundType.SAND).lightLevel((state) -> 12)));
+            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_ORANGE).strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.SAND).lightLevel((state) -> 12)));
     public static final RegistryObject<Block> ENDER_STAR = BLOCKS.register("ender_star", () ->
-            new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_YELLOW).strength(3.0F, 6.0F).sound(SoundType.AMETHYST).lightLevel((state) -> 9)));
+            new OxidizingBlock(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_YELLOW).strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.AMETHYST).lightLevel((state) -> 9)));
     public static final RegistryObject<Block> ENDER_STAR_DUST = BLOCKS.register("ender_star_dust", () ->
-            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_YELLOW).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 9)));
+            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_YELLOW).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 9)));
     public static final RegistryObject<Block> ENDER_STAR_DUST_BLOCK = BLOCKS.register("ender_star_dust_block", () ->
-            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_YELLOW).strength(3.0F, 6.0F).sound(SoundType.SAND).lightLevel((state) -> 9)));
+            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_YELLOW).strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.SAND).lightLevel((state) -> 9)));
     public static final RegistryObject<Block> ENDER_NEUTRON = BLOCKS.register("ender_neutron", () ->
-            new Block(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_CYAN).strength(3.0F, 6.0F).sound(SoundType.AMETHYST).lightLevel((state) -> 6)));
+            new OxidizingBlock(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_CYAN).strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.AMETHYST).lightLevel((state) -> 6)));
     public static final RegistryObject<Block> ENDER_NEUTRON_DUST = BLOCKS.register("ender_neutron_dust", () ->
-            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_CYAN).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 6)));
+            new Block(BlockBehaviour.Properties.of(Material.POWDER_SNOW, MaterialColor.COLOR_CYAN).noCollission().instabreak().noOcclusion().strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.POWDER_SNOW).lightLevel((state) -> 6)));
     public static final RegistryObject<Block> ENDER_NEUTRON_DUST_BLOCK = BLOCKS.register("ender_neutron_dust_block", () ->
-            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_CYAN).strength(3.0F, 6.0F).sound(SoundType.SAND).lightLevel((state) -> 6)));
+            new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_CYAN).strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.SAND).lightLevel((state) -> 6)));
 
     public static final RegistryObject<Block> SPODOSOL = BLOCKS.register("spodosol", () ->
             new Block(BlockBehaviour.Properties.copy(Blocks.PODZOL).sound(SoundType.ROOTED_DIRT)));
