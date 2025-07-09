@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "kazsend:enderviolet_log"
+    }
+  },
+  "result": {
+    "item": "kazsend:enderviolet_wood",
+    "count": 3
+  }
+}

@@ -1,25 +1,49 @@
 package com.Apothic0n.KazsEnd.core.objects;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.BonemealableBlock;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.lighting.LayerLightEngine;
+import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
 import java.util.Random;
 
 public class SpodosolBlock extends Block implements BonemealableBlock {
     public SpodosolBlock(Properties properties) {
         super(properties);
+    }
+
+    private static boolean canBeGrass(BlockState p_56824_, LevelReader p_56825_, BlockPos p_56826_) {
+        BlockPos blockpos = p_56826_.above();
+        BlockState blockstate = p_56825_.getBlockState(blockpos);
+        if (blockstate.is(Blocks.SNOW) && blockstate.getValue(SnowLayerBlock.LAYERS) == 1) {
+            return true;
+        } else if (blockstate.getFluidState().getAmount() == 8) {
+            return false;
+        } else {
+            int i = LayerLightEngine.getLightBlockInto(p_56825_, p_56824_, p_56826_, blockstate, blockpos, Direction.UP, blockstate.getLightBlock(p_56825_, blockpos));
+            return i < p_56825_.getMaxLightLevel();
+        }
+    }
+
+    @Override
+    public void randomTick(@NotNull BlockState state, ServerLevel level, @NotNull BlockPos pos, @NotNull Random random) {
+        if (!canBeGrass(state, level, pos)) {
+            level.setBlock(pos, Blocks.END_STONE.defaultBlockState(), UPDATE_ALL);
+        }
+    }
+
+    @Override
+    public boolean isRandomlyTicking(@NotNull BlockState state) {
+        return true;
     }
 
     @Override
