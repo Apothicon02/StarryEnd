@@ -40,9 +40,9 @@ public final class KazsEndBlocks {
             new Block(BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_CYAN).strength(3.0F, 6.0F).isValidSpawn(Blocks::never).sound(SoundType.SAND).lightLevel((state) -> 6)));
 
     public static final RegistryObject<Block> SPODOSOL = BLOCKS.register("spodosol", () ->
-            new SpodosolBlock(BlockBehaviour.Properties.copy(Blocks.PODZOL).sound(SoundType.ROOTED_DIRT).requiresCorrectToolForDrops()));
+            new SpodosolBlock(BlockBehaviour.Properties.copy(Blocks.PODZOL).sound(KazsEndSoundTypes.GRASSY_STONE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ENDER_TURF = BLOCKS.register("ender_turf", () ->
-            new EnderTurfBlock(BlockBehaviour.Properties.copy(Blocks.PODZOL).sound(SoundType.ROOTED_DIRT).requiresCorrectToolForDrops()));
+            new EnderTurfBlock(BlockBehaviour.Properties.copy(Blocks.PODZOL).sound(KazsEndSoundTypes.GRASSY_STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> ENDER_ROOTS = BLOCKS.register("ender_roots", () ->
             new EnderFoliageBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).sound(SoundType.ROOTS)));
