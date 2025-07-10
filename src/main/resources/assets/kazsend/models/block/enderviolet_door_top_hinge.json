@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "kazsend:block/enderviolet_door_top",
+    "bottom": "kazsend:block/enderviolet_door_bottom"
+  }
+}

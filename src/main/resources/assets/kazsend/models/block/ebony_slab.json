@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "kazsend:block/ebony_planks",
+    "top": "kazsend:block/ebony_planks",
+    "side": "kazsend:block/ebony_planks"
+  }
+}

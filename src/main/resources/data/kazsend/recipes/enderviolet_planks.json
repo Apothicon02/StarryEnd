@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "kazsend:enderviolet_logs"
+    }
+  ],
+  "result": {
+    "item": "kazsend:enderviolet_planks",
+    "count": 4
+  }
+}

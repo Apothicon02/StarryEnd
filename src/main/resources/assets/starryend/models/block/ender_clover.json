@@ -1,6 +1,0 @@
-{
-  "parent": "starryend:block/flowerbed",
-  "textures": {
-    "flowerbed": "starryend:block/ender_clover"
-  }
-}

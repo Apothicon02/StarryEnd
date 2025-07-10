@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "starryend:ebony_fence_gate",
-    "starryend:enderviolet_fence_gate"
+    "kazsend:ebony_fence_gate",
+    "kazsend:enderviolet_fence_gate"
   ]
 }

@@ -22,18 +22,18 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlac
 import java.util.OptionalInt;
 
 public final class StarryEndConfiguredFeatures {
-    public static final Holder<ConfiguredFeature<SimpleBlockConfiguration, ?>> ENDER_ROOT = FeatureUtils.register("starryend:ender_root", Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(StarryEndBlocks.ENDER_ROOTS.get().defaultBlockState())));
-    public static final Holder<ConfiguredFeature<SimpleBlockConfiguration, ?>> ENDERGREEN = FeatureUtils.register("starryend:endergreen", Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(StarryEndBlocks.ENDERGREEN.get().defaultBlockState())));
-    public static final Holder<ConfiguredFeature<SimpleBlockConfiguration, ?>> ENDER_CLOVER = FeatureUtils.register("starryend:ender_clover", Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(StarryEndBlocks.ENDER_CLOVER.get().defaultBlockState())));
+    public static final Holder<ConfiguredFeature<SimpleBlockConfiguration, ?>> ENDER_ROOT = FeatureUtils.register("kazsend:ender_root", Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(StarryEndBlocks.ENDER_ROOTS.get().defaultBlockState())));
+    public static final Holder<ConfiguredFeature<SimpleBlockConfiguration, ?>> ENDERGREEN = FeatureUtils.register("kazsend:endergreen", Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(StarryEndBlocks.ENDERGREEN.get().defaultBlockState())));
+    public static final Holder<ConfiguredFeature<SimpleBlockConfiguration, ?>> ENDER_CLOVER = FeatureUtils.register("kazsend:ender_clover", Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(StarryEndBlocks.ENDER_CLOVER.get().defaultBlockState())));
 
-    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> EBONY_TREE = FeatureUtils.register("starryend:ebony_tree", Feature.TREE, (new TreeConfiguration.TreeConfigurationBuilder(
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> EBONY_TREE = FeatureUtils.register("kazsend:ebony_tree", Feature.TREE, (new TreeConfiguration.TreeConfigurationBuilder(
             BlockStateProvider.simple(StarryEndBlocks.EBONY_LOG.get()),
             new StraightTrunkPlacer(5, 2, 1),
             BlockStateProvider.simple(StarryEndBlocks.EBONY_LEAVES.get()),
             new SpruceFoliagePlacer(UniformInt.of(2, 3), UniformInt.of(0, 2), UniformInt.of(1, 2)),
             new TwoLayersFeatureSize(2, 0, 2))
     ).ignoreVines().build());
-    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> EBONY_GIANT_TREE = FeatureUtils.register("starryend:ebony_giant_tree", Feature.TREE, (new TreeConfiguration.TreeConfigurationBuilder(
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> EBONY_GIANT_TREE = FeatureUtils.register("kazsend:ebony_giant_tree", Feature.TREE, (new TreeConfiguration.TreeConfigurationBuilder(
             BlockStateProvider.simple(StarryEndBlocks.EBONY_LOG.get()),
             new GiantTrunkPlacer(13, 2, 14),
             BlockStateProvider.simple(StarryEndBlocks.EBONY_LEAVES.get()),
@@ -41,7 +41,7 @@ public final class StarryEndConfiguredFeatures {
             new TwoLayersFeatureSize(1, 1, 2))
     ).decorators(ImmutableList.of(new AlterGroundDecorator(BlockStateProvider.simple(StarryEndBlocks.SPODOSOL.get())))).build());
 
-    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> ENDERVIOLET_TREE = FeatureUtils.register("starryend:enderviolet_tree", Feature.TREE, (new TreeConfiguration.TreeConfigurationBuilder(
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> ENDERVIOLET_TREE = FeatureUtils.register("kazsend:enderviolet_tree", Feature.TREE, (new TreeConfiguration.TreeConfigurationBuilder(
             BlockStateProvider.simple(StarryEndBlocks.ENDERVIOLET_LOG.get()),
             new FancyTrunkPlacer(3, 11, 0),
             BlockStateProvider.simple(StarryEndBlocks.ENDERVIOLET_LEAVES.get()),

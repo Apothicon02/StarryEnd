@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_top",
-  "textures": {
-    "top": "starryend:block/enderviolet_door_top",
-    "bottom": "starryend:block/enderviolet_door_bottom"
-  }
-}

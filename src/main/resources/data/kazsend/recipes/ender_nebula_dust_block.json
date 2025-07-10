@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "kazsend:ender_nebula_dust"
+    }
+  },
+  "result": {
+    "item": "kazsend:ender_nebula_dust_block"
+  }
+}

@@ -11,7 +11,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(StarryEnd.MODID)
 public class StarryEnd {
-    public static final String MODID = "starryend";
+    public static final String MODID = "kazsend";
 
     public StarryEnd() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();

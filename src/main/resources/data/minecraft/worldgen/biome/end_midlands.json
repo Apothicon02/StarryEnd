@@ -14,7 +14,7 @@
   "carvers": {},
   "features": [
     [
-      "starryend:ender_turf"
+      "kazsend:ender_turf"
     ],
     [],
     [],
@@ -24,14 +24,14 @@
     [],
     [],
     [
-      "starryend:endergreen",
-      "starryend:ender_clover",
-      "starryend:enderviolet_trees"
+      "kazsend:endergreen",
+      "kazsend:ender_clover",
+      "kazsend:enderviolet_trees"
     ],
     [
-      "starryend:sprouting_endervines",
+      "kazsend:sprouting_endervines",
       "minecraft:end_spike",
-      "starryend:stars"
+      "kazsend:stars"
     ]
   ],
   "spawners": {

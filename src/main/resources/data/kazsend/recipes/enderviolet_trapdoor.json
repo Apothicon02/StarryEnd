@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "kazsend:enderviolet_planks"
+    }
+  },
+  "result": {
+    "item": "kazsend:enderviolet_trapdoor",
+    "count": 2
+  }
+}

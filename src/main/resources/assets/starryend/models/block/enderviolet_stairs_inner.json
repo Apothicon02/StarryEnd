@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "starryend:block/enderviolet_planks",
-    "top": "starryend:block/enderviolet_planks",
-    "side": "starryend:block/enderviolet_planks"
-  }
-}

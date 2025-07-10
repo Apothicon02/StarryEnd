@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "kazsend:block/enderviolet_planks"
+  }
+}

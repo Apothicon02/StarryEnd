@@ -1,6 +1,0 @@
-{
-  "parent": "starryend:block/dust_layer",
-  "textures": {
-    "flowerbed": "starryend:block/ender_neutron_dust"
-  }
-}

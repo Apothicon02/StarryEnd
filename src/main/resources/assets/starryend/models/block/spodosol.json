@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "starryend:block/spodosol_top",
-    "side": "starryend:block/spodosol_side",
-    "bottom": "minecraft:block/end_stone"
-  }
-}
