@@ -61,6 +61,8 @@ public final class KazsEndBlocks {
 
     public static final RegistryObject<Block> EBONY_SAPLING = BLOCKS.register("ebony_sapling", () ->
             new SaplingBlock(new EbonyTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> POTTED_EBONY_SAPLING = BLOCKS.register("potted_ebony_sapling", () ->
+            new FlowerPotBlock(EBONY_SAPLING.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noOcclusion()));
     public static final RegistryObject<Block> EBONY_LEAVES = BLOCKS.register("ebony_leaves", () ->
             new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.GRASS)));
     public static final RegistryObject<Block> EBONY_LOG = BLOCKS.register("ebony_log", () ->
@@ -100,6 +102,8 @@ public final class KazsEndBlocks {
 
     public static final RegistryObject<Block> ENDERVIOLET_SAPLING = BLOCKS.register("enderviolet_sapling", () ->
             new SaplingBlock(new EndervioletTreeGrower(), BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> POTTED_ENDERVIOLET_SAPLING = BLOCKS.register("potted_enderviolet_sapling", () ->
+            new FlowerPotBlock(ENDERVIOLET_SAPLING.get(), BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noOcclusion()));
     public static final RegistryObject<Block> ENDERVIOLET_LEAVES = BLOCKS.register("enderviolet_leaves", () ->
             new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.GRASS)));
     public static final RegistryObject<Block> ENDERVIOLET_LOG = BLOCKS.register("enderviolet_log", () ->
@@ -146,10 +150,12 @@ public final class KazsEndBlocks {
         ItemBlockRenderTypes.setRenderLayer(SPROUTING_ENDERVINES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(SPROUTING_ENDERVINES_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(EBONY_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(POTTED_EBONY_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(EBONY_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(EBONY_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(EBONY_TRAPDOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ENDERVIOLET_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(POTTED_ENDERVIOLET_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ENDERVIOLET_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ENDERVIOLET_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ENDERVIOLET_TRAPDOOR.get(), RenderType.cutout());

@@ -69,7 +69,13 @@ public class EnderTurfBlock extends Block implements BonemealableBlock {
 
             for(int j = 0; j < i / 16; ++j) {
                 blockpos1 = blockpos1.offset(random.nextInt(3) - 1, (random.nextInt(3) - 1) * random.nextInt(3) / 2, random.nextInt(3) - 1);
-                if (!level.getBlockState(blockpos1.below()).is(this) || level.getBlockState(blockpos1).isCollisionShapeFullBlock(level, blockpos1)) {
+                BlockPos belowPos = blockpos1.below();
+                BlockState belowState = level.getBlockState(belowPos);
+                if (belowState.is(Blocks.END_STONE) && canBeGrass(belowState, level, belowPos)) {
+                    belowState = this.defaultBlockState();
+                    level.setBlock(belowPos, belowState, UPDATE_ALL);
+                }
+                if (!belowState.is(this) || level.getBlockState(blockpos1).isCollisionShapeFullBlock(level, blockpos1)) {
                     continue label46;
                 }
             }
