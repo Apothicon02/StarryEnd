@@ -1,6 +1,0 @@
-{
-  "parent": "kazsend:block/flowerbed",
-  "textures": {
-    "flowerbed": "kazsend:block/ender_clover"
-  }
-}

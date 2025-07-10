@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "kazsend:block/creeping_endrils_plant"
-  }
-}

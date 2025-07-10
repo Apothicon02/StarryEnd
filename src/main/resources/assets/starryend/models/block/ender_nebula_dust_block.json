@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "starryend:block/ender_nebula_dust_block"
+  }
+}

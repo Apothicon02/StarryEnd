@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "kazsend:block/stripped_enderviolet_log",
-    "side": "kazsend:block/stripped_enderviolet_log"
-  }
-}

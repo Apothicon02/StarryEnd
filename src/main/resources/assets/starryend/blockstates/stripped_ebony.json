@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "starryend:block/stripped_ebony_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "starryend:block/stripped_ebony"
+    },
+    "axis=z": {
+      "model": "starryend:block/stripped_ebony_horizontal",
+      "x": 90
+    }
+  }
+}

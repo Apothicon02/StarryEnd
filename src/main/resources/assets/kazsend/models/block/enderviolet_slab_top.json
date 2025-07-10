@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "kazsend:block/enderviolet_planks",
-    "top": "kazsend:block/enderviolet_planks",
-    "side": "kazsend:block/enderviolet_planks"
-  }
-}

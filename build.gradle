@@ -18,8 +18,8 @@ apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
 version = '1.0.0'
-group = 'com.Apothic0n.KazsEnd' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'kazsend'
+group = 'com.Apothic0n.StarryEnd' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'starryend'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -63,7 +63,7 @@ minecraft {
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
             mods {
-                kazsend {
+                starryend {
                     source sourceSets.main
                 }
             }
@@ -85,7 +85,7 @@ minecraft {
             //property 'forge.logging.console.level', 'debug'
 
             mods {
-                kazsend {
+                starryend {
                     source sourceSets.main
                 }
             }
@@ -110,7 +110,7 @@ minecraft {
             args '--mod', 'archivesBaseName', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                kazsend {
+                starryend {
                     source sourceSets.main
                 }
             }
@@ -166,8 +166,8 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     mixin {
         // MixinGradle Settings
-        add sourceSets.main, 'mixins.kazsend.refmap.json'
-        config 'mixins.kazsend.json'
+        add sourceSets.main, 'mixins.starryend.refmap.json'
+        config 'mixins.starryend.json'
 
         debug.verbose = true
         debug.export = true

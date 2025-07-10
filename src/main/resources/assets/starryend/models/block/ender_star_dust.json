@@ -1,0 +1,6 @@
+{
+  "parent": "starryend:block/dust_layer",
+  "textures": {
+    "flowerbed": "starryend:block/ender_star_dust"
+  }
+}

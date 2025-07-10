@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "starryend:enderviolet_planks"
+    }
+  },
+  "result": {
+    "item": "starryend:enderviolet_pressure_plate"
+  }
+}

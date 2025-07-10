@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "kazsend:ender_nebula_dust_block",
-    "kazsend:ender_nebula_dust",
-    "kazsend:ender_protostar_dust_block",
-    "kazsend:ender_protostar_dust",
-    "kazsend:ender_star_dust_block",
-    "kazsend:ender_star_dust",
-    "kazsend:ender_neutron_dust_block",
-    "kazsend:ender_neutron_dust"
+    "starryend:ender_nebula_dust_block",
+    "starryend:ender_nebula_dust",
+    "starryend:ender_protostar_dust_block",
+    "starryend:ender_protostar_dust",
+    "starryend:ender_star_dust_block",
+    "starryend:ender_star_dust",
+    "starryend:ender_neutron_dust_block",
+    "starryend:ender_neutron_dust"
   ]
 }

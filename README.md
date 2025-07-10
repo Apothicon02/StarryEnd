@@ -1,2 +1,2 @@
-# KazsEnd
+# StarryEnd
 Two new end biomes. 

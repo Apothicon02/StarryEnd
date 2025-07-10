@@ -1,0 +1,12 @@
+{
+  "compatibilityLevel": "JAVA_17",
+  "package": "com.Apothic0n.StarryEnd.mixin",
+  "refmap": "mixins.starryend.refmap.json",
+  "required": true,
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "AlterGroundDecoratorMixin"
+  ]
+}

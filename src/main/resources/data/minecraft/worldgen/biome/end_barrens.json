@@ -14,19 +14,19 @@
   "carvers": {},
   "features": [
     [
-      "kazsend:spodosol"
+      "starryend:spodosol"
     ],
     [],
     [],
     [
-      "kazsend:ender_roots",
-      "kazsend:ebony_trees",
-      "kazsend:ebony_giant_trees"
+      "starryend:ender_roots",
+      "starryend:ebony_trees",
+      "starryend:ebony_giant_trees"
     ],
     [
-      "kazsend:creeping_endrils",
+      "starryend:creeping_endrils",
       "minecraft:end_spike",
-      "kazsend:stars"
+      "starryend:stars"
     ]
   ],
   "spawners": {

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "starryend:block/ebony_slab"
+    },
+    "type=double": {
+      "model": "starryend:block/ebony_planks"
+    },
+    "type=top": {
+      "model": "starryend:block/ebony_slab_top"
+    }
+  }
+}

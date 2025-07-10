@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "kazsend:block/creeping_endrils_plant"
-  }
-}

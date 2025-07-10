@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "kazsend:sprouting_endervines",
-    "kazsend:sprouting_endervines_plant",
-    "kazsend:creeping_endrils",
-    "kazsend:creeping_endrils_plant"
+    "starryend:sprouting_endervines",
+    "starryend:sprouting_endervines_plant",
+    "starryend:creeping_endrils",
+    "starryend:creeping_endrils_plant"
   ]
 }

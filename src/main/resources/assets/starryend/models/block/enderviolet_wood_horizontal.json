@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "starryend:block/enderviolet_log",
+    "side": "starryend:block/enderviolet_log"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "starryend:block/enderviolet_planks"
+  }
+}

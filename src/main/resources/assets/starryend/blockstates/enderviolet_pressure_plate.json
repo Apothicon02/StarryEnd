@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "starryend:block/enderviolet_pressure_plate"
+    },
+    "powered=true": {
+      "model": "starryend:block/enderviolet_pressure_plate_down"
+    }
+  }
+}
