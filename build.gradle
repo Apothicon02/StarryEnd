@@ -17,7 +17,7 @@ apply plugin: 'maven-publish'
 // MixinGradle:
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.1.1'
+version = '1.1.2'
 group = 'com.Apothic0n.StarryEnd' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'kazsend'
 
@@ -166,8 +166,8 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     mixin {
         // MixinGradle Settings
-        add sourceSets.main, 'mixins.kazsend.refmap.json'
-        config 'mixins.kazsend.json'
+        add sourceSets.main, 'mixins.starryend.refmap.json'
+        config 'mixins.starryend.json'
 
         debug.verbose = true
         debug.export = true
@@ -182,7 +182,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "Ecospherical Expansion",
+                "Specification-Title"     : "Starry End",
                 "Specification-Vendor"    : "Apothic0n",
                 "Specification-Version"   : "1",
                 "Implementation-Title"    : project.name,
