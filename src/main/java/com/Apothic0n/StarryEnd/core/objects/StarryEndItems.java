@@ -15,24 +15,32 @@ public final class StarryEndItems extends Items {
 
     public static final RegistryObject<Item> ENDER_NEBULA = ITEMS.register("ender_nebula", () ->
             new BlockItem(StarryEndBlocks.ENDER_NEBULA.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+    public static final RegistryObject<Item> STAGNANT_ENDER_NEBULA = ITEMS.register("stagnant_ender_nebula", () ->
+            new BlockItem(StarryEndBlocks.STAGNANT_ENDER_NEBULA.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_NEBULA_DUST = ITEMS.register("ender_nebula_dust", () ->
             new BlockItem(StarryEndBlocks.ENDER_NEBULA_DUST.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_NEBULA_DUST_BLOCK = ITEMS.register("ender_nebula_dust_block", () ->
             new BlockItem(StarryEndBlocks.ENDER_NEBULA_DUST_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_PROTOSTAR = ITEMS.register("ender_protostar", () ->
             new BlockItem(StarryEndBlocks.ENDER_PROTOSTAR.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+    public static final RegistryObject<Item> STAGNANT_ENDER_PROTOSTAR = ITEMS.register("stagnant_ender_protostar", () ->
+            new BlockItem(StarryEndBlocks.STAGNANT_ENDER_PROTOSTAR.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_PROTOSTAR_DUST = ITEMS.register("ender_protostar_dust", () ->
             new BlockItem(StarryEndBlocks.ENDER_PROTOSTAR_DUST.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_PROTOSTAR_DUST_BLOCK = ITEMS.register("ender_protostar_dust_block", () ->
             new BlockItem(StarryEndBlocks.ENDER_PROTOSTAR_DUST_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_STAR = ITEMS.register("ender_star", () ->
             new BlockItem(StarryEndBlocks.ENDER_STAR.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+    public static final RegistryObject<Item> STAGNANT_ENDER_STAR = ITEMS.register("stagnant_ender_star", () ->
+            new BlockItem(StarryEndBlocks.STAGNANT_ENDER_STAR.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_STAR_DUST = ITEMS.register("ender_star_dust", () ->
             new BlockItem(StarryEndBlocks.ENDER_STAR_DUST.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_STAR_DUST_BLOCK = ITEMS.register("ender_star_dust_block", () ->
             new BlockItem(StarryEndBlocks.ENDER_STAR_DUST_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_NEUTRON = ITEMS.register("ender_neutron", () ->
             new BlockItem(StarryEndBlocks.ENDER_NEUTRON.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+    public static final RegistryObject<Item> STAGNANT_ENDER_NEUTRON = ITEMS.register("stagnant_ender_neutron", () ->
+            new BlockItem(StarryEndBlocks.STAGNANT_ENDER_NEUTRON.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_NEUTRON_DUST = ITEMS.register("ender_neutron_dust", () ->
             new BlockItem(StarryEndBlocks.ENDER_NEUTRON_DUST.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> ENDER_NEUTRON_DUST_BLOCK = ITEMS.register("ender_neutron_dust_block", () ->

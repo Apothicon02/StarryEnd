@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "G#G",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "starryend:ender_protostar_dust"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "starryend:stagnant_ender_protostar"
+  }
+}
